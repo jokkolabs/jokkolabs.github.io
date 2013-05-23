@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Oregano';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oregano'), local('Oregano-Regular'), url(http://themes.googleusercontent.com/static/fonts/oregano/v1/AXRUk8BpYOUzJDBkin2JJgLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oregano';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Oregano Italic'), local('Oregano-Italic'), url(http://themes.googleusercontent.com/static/fonts/oregano/v1/NucBAytQOo3ho_2ojYS8arO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}

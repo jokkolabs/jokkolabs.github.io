@@ -1,0 +1,24 @@
+[{
+	"ident": "1-kiwix",
+	"title": "Wikipédia hors-ligne avec Kiwix",
+	"date": "2013-05-31T14:00:00.000Z",
+	"abstract": "<p>Découvrez comment accèder à l'intégralité de l'encyclopédie Wikipédia sur votre ordinateur, sans connection Internet.</p><p>Ouvert à tous!</p>",
+	"description_id": "kiwix",
+	"tags": ["kiwix", "wikipedia"]
+},
+{
+	"ident": "2-osm",
+	"title": "Cartographions Bamako",
+	"date": "2013-06-07T14:00:00.000Z",
+	"abstract": "<p>Apprenez à cartographier votre quartier et à le rendre disponible en ligne sur OpenStreetMap.</p>",
+	"description_id": "osm",
+	"tags": ["osm"]
+},
+{
+	"ident": "2-osm",
+	"title": "Cartographions Bamako",
+	"date": "2011-06-07T14:00:00.000Z",
+	"abstract": "<p>Apprenez à cartographier votre quartier et à le rendre disponible en ligne sur OpenStreetMap.</p>",
+	"description_id": "osm",
+	"tags": ["osm"]
+}]

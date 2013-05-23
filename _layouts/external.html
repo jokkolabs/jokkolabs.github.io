@@ -1,0 +1,25 @@
+---
+sticky: sticky
+---
+
+{% include layout_head.html %}
+<body>
+
+<div id="wrapper">
+	{% include layout_banner.html %}
+
+	<div id="content" class="container">
+		{{ content }}
+	</div>
+
+</div>
+
+{% include layout_footer.html %}
+<script src="/stylesheets/js/jokkolabs.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	{{ page.jsonload }}
+});
+</script>
+
+{% include layout_tail.html %}
