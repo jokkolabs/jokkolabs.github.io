@@ -2,6 +2,7 @@
 title: Saisir correctement du Bambara
 layout: post
 category: blog
+author: <a href="mailto:rgaudin@jokkolabs.net">rgaudin</a>
 ---
 
 <div class="row-fluid">

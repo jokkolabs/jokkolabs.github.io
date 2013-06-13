@@ -10,7 +10,7 @@ keywords_fr: "co-working espace bamako mali internet rapide fast ouvert libre lo
 
 url: "http://jokkolabs.ml"
 
-paginate: 1
+paginate: 3
 pagination_dir: blog
 paginate_path: /blog/page:num
 
