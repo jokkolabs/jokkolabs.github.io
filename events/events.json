@@ -1,24 +1,24 @@
 [{
     "ident": "mattberg",
-    "title": "ITC in Africa with Matt Berg",
+    "title": "ICT in Africa with Matt Berg",
     "date": "2014-02-14T14:30:00.000Z",
-    "abstract": "<p>CodeAfria, Ona, etc.</p>",
-    "description": "<p>Présentation en français</p><h4>Présentateur</h4><ul><li>Matt Berg</li></ul>",
+    "abstract": "<p>Présentation/discussion sur la place de la technologie en Afrique.</p>",
+    "description": "<p>Présentation en français</p><h4>Présentateur</h4><ul><li><a href='http://twitter.com/mberg'>Matt Berg</a></li></ul>",
     "tags": [""]
 },
 {
     "ident": "samroyston",
-    "title": "Développement iPhone et Web",
+    "title": "Software Development, Hardware Prototyping",
     "date": "2014-02-07T14:30:00.000Z",
-    "abstract": "<p>Présentation/démo sur le développement.</p>",
-    "description": "<p>Présentation en anglais + traduction.</p><h4>Présentateur</h4></ul><ul><li>Sam Royston, Developpeur de sahel.tv</li></ul>",
+    "abstract": "<p>Présentation/démo sur le développement et le prototypage matériel.</p>",
+    "description": "<p>Présentation en anglais + traduction.</p><h4>Présentateur</h4></ul><ul><li><a href='http://somatostat.in'>Sam Royston</a>, <a href='http://sahel.tv'>sahel.tv</a></li></ul>",
     "tags": [""]
 },
 {
     "ident": "kiwix",
-    "title": "Wikipédia sans connection avec Kiwix",
+    "title": "Wikipédia sans connection Internet avec Kiwix",
     "date": "2014-01-31T14:30:00.000Z",
-    "abstract": "<p>Présentation de Kiwix</p>",
+    "abstract": "<p>Présentation des différentes manières d'acèder à Wikipédia avec le logiciel <a href='http://kiwix.org'>Kiwix</a>.</p>",
     "description": "<h4>Présentateur</h4></ul><ul><li>Ibrahima Fadiga, YELEMAN</li></ul>",
     "tags": ["kiwix"]
 },
@@ -26,7 +26,7 @@
     "ident": "claraburget",
     "title": "Introduction aux Systèmes d'Information Géographique",
     "date": "2014-01-24T14:30:00.000Z",
-    "abstract": "<p>Détails à venir</p>",
+    "abstract": "<p>Présentation sur l'importance des SIG et démonstrations d'outils.</p>",
     "description": "<p>Présentation en français</p><h4>Présentatrice</h4></ul><ul><li>Clara Burgert, GIS Expert, ICF MACRO</li></ul>",
     "tags": [""]
 },
@@ -34,7 +34,7 @@
     "ident": "virtual",
     "title": "La virtualisation: VirtualBox, VMWare",
     "date": "2014-01-17T14:30:00.000Z",
-    "abstract": "<p>Présentation des outils de virtualisation VirtualBox, VMware par des cas réels.</p>",
+    "abstract": "<p>Présentation par l'exemple de VirtualBox et VMware.</p>",
     "description": "<h4>Sujets</h4></ul><ul><li>Introduction à la virtualisation par Hugues Vergobbi<li>Cas d’une ferme de compilation (Kiwix) par Renaud Gaudin<li>Cas d’un datacenter de Cloud avec VMWare par Hugues Vergobbi</ul></p><h4>Prsentateurs</h4><ul><li>Hugues Vergobbi, Responsable exploitation datacenter, Flowline<li>Renaud Gaudin, Directeur Technique, Yeleman.sarl</ul><a href='http://www.flowline.fr'><img class='map' src='http://www.flowline.fr/data/uploads/image/images-site/flowline.png' width='152' height='4'/></a> <a href='http://kiwix.org'><img src='/medias/logo-kiwix.png' width='152' height='4' /></a><a href='http://kiwix.org'> <img class='map' src='/images/Kiwix_logo.png' width='152' height='4'></a> <a href='http://virtualbox.org/'> <img class='map' src='/images/virtual-box_logo.jpg' width='152' height='4'></a> <a href='http://www.vmware.com/fr/'> <img class='map' src='/images/logo-vmware.jpg' width='45' height='4'></a>",
     "tags": [""]
 },
