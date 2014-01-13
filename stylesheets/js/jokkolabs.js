@@ -57,7 +57,7 @@ function displayEvent(event) {
 	var htitle = $("<h1 />");
 	htitle.html(event.title);
 	var hdate = $("<h4 />");
-	hdate.html(event.date.format("dddd dd mmmm"));
+	hdate.html(event.date.format("dddd dd mmmm à H:M"));
 	var habstract = $("<div />");
 	habstract.html(event.abstract);
 	var hdescription = $("<div id='event-description' />");
