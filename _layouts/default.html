@@ -1,47 +1,15 @@
-{% include layout_head.html %}
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body>
 
-<body>
+    <div class="container-fluid">
+    {% include header.html %}
+      <div class="wrap">
+        {{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
 
-<header id="home"></header>
-
-<div id="wrapper">
-
-	{% include layout_banner.html %}
-
-	<div id="content" class="container {{ page.pageclass }}">
-
-		{{ content }}
-
-	</div>
-
-</div>
-
-{% include layout_footer.html %}
-
-<!-- <script src="/stylesheets/js/waypoints.js"></script>
-<script src="/stylesheets/js/jokkolabs.js"></script> -->
-<script type="text/javascript">
-$(document).ready(function() {
-	var images = ['the-hero.jpg', 'laptop-hero.jpg']; //, 'intro-jokko.jpg'];
-	$('header').css({'background-image': 'url(../images/' + images[Math.floor(Math.random() * images.length)] + ')'});
-
-	$('.top').addClass('hidden');
-	$.waypoints.settings.scrollThrottle = 30;
-	$('#wrapper').waypoint(function(event, direction) {
-		$('.top').toggleClass('hidden', direction === "up");
-	}, {
-		offset: '-100%'
-	}).find('#main-nav-holder').waypoint(function(event, direction) {
-		$(this).parent().toggleClass('sticky', direction === "down");
-		event.stopPropagation();
-	});
-	$("#slides").slidesjs({
-        width: 700,
-        height: 420,
-        navigation: false
-      });
-	loadEventsForMainPage();
-});
-</script>
-
-{% include layout_tail.html %}
+    </body>
+</html>

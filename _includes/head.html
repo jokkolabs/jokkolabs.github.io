@@ -1,0 +1,17 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "/stylesheets/jokkolabs.css" | prepend: site.baseurl }}">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{{"/stylesheets/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{"/stylesheets/bootstrap/css/bootstrap-theme.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{"/stylesheets/fontello/css/fontello.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{"/stylesheets/fontello/css/animation.css" | prepend: site.baseurl }}"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
