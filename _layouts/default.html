@@ -1,15 +1,103 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="{{ site.description }}">
+		<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+				
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{{"/stylesheets/fontello/css/fontello.css" | prepend: site.baseurl }}">
+
+		<link href='http://fonts.googleapis.com/css?family=Economica:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			body h1, body h2, body h3 { font-family: 'Economica', sans-serif; }
+			address { margin-bottom: 1em; }
+			ul { padding: 0; list-style-position: inside; list-style-type: square; }
+			a, a:visited, a:link, a:hover, a:focus, a:active { color: #009349 !important; }
+			.english h1, .english h2, .english h3 { text-align: right; }
+			.french h1, .french h2, .french h3 { text-align: left; }
+			/* HEADER */
+			.flag { position: fixed; width: 100%; z-index: 2000; }
+			.flag div {	height: 5px; background-repeat: repeat-y; }
+			.green { background-color: green; }
+			.gold { background-color: gold; }
+			.red { background-color: red; }
+			header { color: #828282; border-bottom: 1px solid #e8e8e8; padding: .1em 0 .1em 0;}
+			header h2 { font-size: 2em; font-weight: 300; letter-spacing: -0.5px; color: black; }
+			/* FOOTER */
+			footer { color: #828282; border-top: 1px solid #e8e8e8; }
+			footer h2 { font-weight: 300; letter-spacing: -0.5px; margin-bottom: .8em; }
+			footer ul { list-style: none; list-style-position: outside; padding: 0; }
+			.social-networks i { font-size: 1.3em; }
+			.logo { margin-top: .5em; text-align: right; }
+			.logo img { width: 200px; }
+			/* ELEMENTS */
+			.map-container { text-align: center; padding: 0; max-width: 200px; }
+			.plans { text-align: center; }
+			.plans > div { border-right: 1px solid #e8e8e8; }
+			.plans > div:last-child { border-right: 0; }
+			.footnotes { font-size: .8em; }
+			.map-row-container { width: 100%; height: 500px; }
+			.map-container {
+				padding: 3px;
+				background: repeating-linear-gradient(45deg, #333333, #333333 10px,	#FFFFFF 10px, #FFFFFF 20px); border-radius: 8px;
+				left: 50%;  margin-left: -100px; }
+			.map { width: 100%; height: 500px; }
+			.img.map {
+				background-image: url({{"/stylesheets/img/osm_map200.png" | prepend: site.baseurl }});
+				max-width: 200px;
+				background-repeat: no-repeat;
+				cursor: pointer;
+			}
+			@media (min-width: 768px) {
+				.map-container { max-width: 700px; margin-left: -350px; }
+				.img.map {
+					max-width: 700px;
+					background-image: url({{"/stylesheets/img/osm_map700.png" | prepend: site.baseurl }});
+				}
+			}
+			@media (min-width: 992px) {
+				.map-container { max-width: 930px; margin-left: -465px; }
+				.img.map {
+					max-width: 930px;
+					background-image:url({{"/stylesheets/img/osm_map.png" | prepend: site.baseurl }});
+				}
+			}
+			.mapbox { width: 100%; max-width: 100%; left: 0; margin-left: 0; }
+			/*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    			.img.map { background-image: url({{"/stylesheets/img/osm_map200@2x.png" | prepend: site.baseurl }}); }
+			}
+			@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { 
+    			.img.map { background-image: url({{"/stylesheets/img/osm_map200@1.25x.png" | prepend: site.baseurl }}); }
+			}
+			@media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi) { 
+    			.img.map { background-image: url({{"/stylesheets/img/osm_map200@1.3x.png" | prepend: site.baseurl }}); }
+			}
+			@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { 
+    			.img.map { background-image: url({{"/stylesheets/img/osm_map200@1.5x.png" | prepend: site.baseurl }}); }
+			}*/
+		</style>
+
+		<link rel="shortcut icon" href="{{"/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
+	</head>
     <body>
-
-    <div class="container-fluid">
-    {% include header.html %}
-      <div class="wrap">
-        {{ content }}
-      </div>
-    </div>
-    {% include footer.html %}
-
-    </body>
+	{{ content }}
+	</body>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function (event) {
+			$('.img.map').on('click', function (e) {
+				e.preventDefault();
+				var parent = $(this).parent();
+				var iframe = $('<iframe class="map mapbox" frameBorder="0"></iframe>');
+				$(this).remove();
+				parent.addClass('mapbox');
+				parent.append(iframe);
+				iframe.attr('src', "{{ site.mapurl }}");
+			});
+		});
+	</script>
 </html>

@@ -1,6 +1,6 @@
 # Site settings
 name: "Jokkolabs Bamako"
-title: "Jokkolabs Bamako — Coworking au Mali"
+title: "Jokkolabs Bamako — Coworking in Mali"
 email: "rgaudin@jokkolabs.net"
 description_en: "Jokkolabs Bamako is the first co-working space in Mali. It is Open &amp; Sharing Oriented and part of the international Jokkolabs Network."
 description: "Jokkolabs Bamako est le premier espace de co-working au Mali. Il est orienté Partage et Ouverture et fait partie d'un mouvement international."
@@ -15,6 +15,8 @@ addres: "Rue 240, Porte 1068"
 bp: "BPE. 3713 – Bamako, Mali"
 fixe: "(223) 20 21 05 87"
 mobile: "(223) 73 12 08 96"
+
+mapurl: "https://a.tiles.mapbox.com/v4/rgaudin.j7gfli30/attribution,zoompan,zoomwheel.html?access_token=pk.eyJ1IjoicmdhdWRpbiIsImEiOiJkUWF0TUZjIn0.ZWJWSo1vmDOKR8DPPwTEhA"
 
 # Build settings
 markdown: kramdown
