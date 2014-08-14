@@ -8,7 +8,9 @@ layout: default
     		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 gold"></div>
     		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 red"></div>
     	</div>
-		<header><h2>{{ site.title }}</h2></header>
+		<header>
+			<h2>{{ site.title }}</h2>
+		</header>
 		<section id="space">
     		{% include space.html %}
     	</section>
@@ -39,9 +41,11 @@ layout: default
 
 			    <div class="col-xs-12 col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3 col-lg-offset-1 col-lg-3 social-networks">
 			      <ul>
-			        {% if site.twitter_username %}<li><a href="https://twitter.com/{{ site.twitter_username }}"><i class="icon-twitter-squared"></i> <span class="username">{{ site.twitter_username }}</span></a></li>{% endif %}
-			        {% if site.facebook_page %}<li><a href="https://facebook.com/{{ site.facebook_page }}"><i class="icon-facebook-squared"></i>  <span class="username">{{ site.facebook_page }}</span></a></li>{% endif %}
-			        {% if site.github_username %}<li><a href="https://github.com/{{ site.github_username }}"><i class="icon-github-squared"></i>  <span class="username">{{ site.github_username }}</span></a></li>{% endif %}
+			        {% if site.twitter_username %}<li><a href="https://twitter.com/{{ site.twitter_username }}"><i class="icon-twitter-squared"></i> {{ site.twitter_username }}</a></li>{% endif %}
+			        {% if site.facebook_page %}<li><a href="https://facebook.com/{{ site.facebook_page }}"><i class="icon-facebook-squared"></i> {{ site.facebook_page }}</a></li>{% endif %}
+			        {% if site.github_username %}<li><a href="https://github.com/{{ site.github_username }}"><i class="icon-github-squared"></i> {{ site.github_username }}</a></li>{% endif %}
+			        <li><a href="http://malebooks.ml"><i class="icon-book"></i> MALeBOOKS</a></li>
+					<li><a href="http://opendata.ml"><i class="icon-database"></i> Open Data Mali</a></li>
 			      </ul>
 			    </div>
 
